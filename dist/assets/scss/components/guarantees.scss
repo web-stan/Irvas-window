@@ -1,0 +1,54 @@
+.guarantees {
+  padding: 6rem 0 1rem;
+  background-color: #0089cd;
+  overflow: hidden;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  &__header {
+    h2 {
+      color: #ffffff;
+    }
+  }
+
+  &__header-sub {
+    background: url(../img/guarantees/header_sub.png) 0 0 no-repeat;
+  }
+
+  &__block {
+    flex: 1;
+    flex-basis: 300px;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    transition: box-shadow .5s;
+    transform: translateZ(0);
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #ffffff;
+      transition: text-shadow .5s;
+    }
+
+    img {
+      min-height: 7rem;
+    }
+
+    &:hover {
+      box-shadow: inset 0 14px 10px rgba(0, 0, 0, 0.25), 
+                        0 14px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    &:hover h3 {
+      text-shadow: 6px 7px 3px rgba(0, 0, 0, .5);
+    }
+  }
+}

@@ -1,0 +1,229 @@
+.popup {
+
+  &,
+  &__engineer,
+  &__calc,
+  &__calc-profile,
+  &__calc-end {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 105vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow-y: auto;
+  }
+
+  &__content {
+    width: 40rem;
+    margin: 20px auto;
+    position: relative;
+    background-color: #ffffff;
+
+    @media (max-width: 530px) {
+      width: 75%;
+
+    }
+  }
+
+  &__close,
+  &__calc-close,
+  &__calc-profile-close,
+  &__calc-end-close {
+    position: absolute;
+    top: -2.2rem;
+    right: -5rem;
+    font-size: 4rem;
+    color: #ffffff;
+    border: none;
+    background: transparent;
+
+    @media (max-width: 530px) {
+      right: -4rem;
+    }
+  }
+
+  &__calc-content {
+    width: 44rem;
+    padding: 1rem 0.5rem 4rem;
+    background-color: #ffffff;
+    margin: 20px auto;
+    position: relative;
+
+    @media (max-width: 530px) {
+      width: 81%;
+    }
+
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+
+    .balcon-icons {
+      margin-bottom: 1rem;
+    }
+
+    .big-img {
+      img {
+        display: none;
+        margin-bottom: 3rem;
+        width: 100%;
+
+        @media (max-width: 530px) {
+          width: 75%;
+        }
+      }
+    }
+
+    #type1 {
+      display: inline-block;
+    }
+
+    .do-image-more {
+      img {
+        width: 110px;
+        height: 70px;
+        cursor: pointer;
+      }
+    }
+
+    input {
+      display: inline-block;
+      margin-bottom: 3rem;
+      width: 10rem;
+      margin-right: 0.3rem;
+    }
+
+    .multiplication {
+      display: inline-block;
+      font-size: 2rem;
+      color: #323131;
+      margin: 0 1rem;
+    }
+
+    label {
+      color: #999;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  &__calc-button {
+    padding: 1rem 5rem;
+  }
+
+  &__calc-profile-button {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    padding: 1rem 5rem;
+  }
+
+  &__calc-profile-content {
+    $c: &;
+
+    margin: 20px auto;
+    position: relative;
+    width: 40rem;
+    padding: 1rem 5rem 4rem;
+    background-color: #fff;
+
+    @media (max-width: 530px) {
+      width: 75%;
+    }
+
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+
+    select {
+      margin-bottom: 1rem;
+      outline: none;
+    }
+
+
+    // .checkbox:checked + .checkbox-custom::before
+    .checkbox {
+      display: none;
+
+      &:checked {
+        &+.checkbox-custom {
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .checkbox-custom {
+      position: relative;
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 2px solid #ccc;
+      border-radius: 3px;
+      vertical-align: middle;
+
+      &[id="cold"]::before {
+        background: url(../img/modal_calc/check.png) center center no-repeat;
+      }
+
+      &[id="warm"]::before {
+        background: url(../img/modal_calc/check_warm.png) center center no-repeat;
+      }
+    }
+
+    .label {
+      padding: 1.3rem 2rem;
+      z-index: 18rem;
+      color: #000000;
+      font-size: 1.5rem;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    img {
+      display: block;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__big-img {
+    width: 60rem;
+
+    @media (max-width: 991px) {
+      width: 50rem;
+    }
+
+    @media (max-width: 530px) {
+      width: 80%;
+    }
+  }
+}

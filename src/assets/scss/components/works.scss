@@ -1,0 +1,25 @@
+.works {
+  padding: 3rem 0;
+  overflow: hidden;
+
+  &__link {
+    height: 270px;
+    flex-basis: 23%;
+    margin-bottom: 3rem;
+    transform: translateZ(0);
+
+    .preview {
+      display: block;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 767px) {
+      justify-content: space-evenly;
+    }
+  }
+}

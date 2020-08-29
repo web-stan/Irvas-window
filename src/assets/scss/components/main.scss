@@ -1,0 +1,139 @@
+.main {
+  padding: 10rem 0;
+  background: #ffffff url(../img/main/bg.png) center 0 no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding: 4% 0 4% 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 5.5rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #333333;
+
+    span {
+      font-size: 2.6rem;
+    }
+
+    @media (max-width: 1400px) {
+      text-align: center;
+      font-size: 5rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    width: 50%;
+
+    h1 span {
+      @media (max-width: 530px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      display: block;
+      width: auto;
+    }
+
+    @media (max-width: 991px) {
+      width: 85%;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 13rem;
+
+    @media (max-width: 767px) {
+      margin-top: 5rem;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__features-block {
+    width: 106px;
+    height: 140px;
+    text-align: center;
+
+    p {
+      font-size: 1.3rem;
+      line-height: 1.3;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+
+  &__form-box {
+    width: 33%;
+    margin-left: 16%;
+
+    @media (max-width: 1400px) {
+      width: 350px;
+      margin-left: 0;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    margin-top: 2rem;
+
+    &.form {
+      @media (max-width: 991px) {
+        background-color: #ffffff9e;
+      }
+    }
+  }
+
+  &__features-block {
+    padding-top: 65px;
+    background-position-y: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &--quality {
+      background-image: url(../img/main/icons/quality.png);
+    }
+
+    &--time {
+      background-image: url(../img/main/icons/time.png);
+    }
+
+    &--guaranty {
+      background-image: url(../img/main/icons/guaranty.png);
+    }
+
+    &--delivery {
+      background-image: url(../img/main/icons/delivery.png);
+    }
+  }
+}

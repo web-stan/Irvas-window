@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: 1199px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: 991px) {
+
+    &.width {
+      max-width: 750px;
+    }
+  }
+}
+
+.button {
+  padding: 2.5rem 0rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border: 1px solid #ffc600;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #ffed26 0%, #ffb400 100%);
+  box-shadow: 1px 2px 20px 0px rgba(255, 153, 0, 0.4);
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 530px) {
+    padding: 1.7rem 0rem;
+    font-size: 1.5rem;
+  }
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.section {
+  &__header {
+    margin-bottom: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 1.4;
+      font-weight: 700;
+      color: #333;
+      text-transform: uppercase;
+
+      @media (max-width: 991px) {
+        font-size: 2.8rem;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+      }
+
+      @media (max-width: 530px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__header-sub {
+    width: 17rem;
+    height: 0.2rem;
+    margin-top: 2rem;
+    margin: 0 auto;
+    background: url(../img/glazing/line.png) 0 0 no-repeat;
+  }
+}
+
+.status {
+  display: block;
+  color: red;
+}
+
+[type="button"] {
+  cursor: pointer;
+}
+
+.form-input {
+  display: block;
+  height: 34px;
+  width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 19;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+
+.prev {
+  left: 0;
+  background: url(../img/glazing/left_arrow.png) center no-repeat;
+  background-size: 70%;
+}
+
+.next {
+  right: 0;
+  background: url(../img/glazing/right_arrow.png) center no-repeat;
+  background-size: 70%;
+}
+
+
+.faded {
+  animation: faded 1s;
+}
+
+@keyframes faded {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
